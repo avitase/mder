@@ -928,17 +928,19 @@ or, alternatively, using a slightly different parametrization of $\mathfrak{m}$ 
 \end{subequations}
 
 We note that in the univariate case, $n=1$, Eq.~\eqref{eq:modev21} becomes a non-standardized Student's $t$-distribution with $\nu$ DoF:
-\begin{align*}
-    p(y_i | \mathfrak{m}) &= \operatorname{St}_\nu \left( y_i \middle| \mu_0, \frac{1 + \kappa}{\kappa} \sigma_0^2 \right) \\
+\begin{subequations}
+\begin{align}
+    p(y_i | \mathfrak{m}) &= \operatorname{St}_\nu \left( y_i \middle| \mu_0, \frac{1 + \kappa}{\kappa} \sigma_0^2 \right) \nonumber \\
     &= \frac{\Gamma\!\left( \frac{\nu + 1}{2} \right)}{\Gamma\!\left( \frac{\nu}{2} \right)} \sqrt{\frac{\kappa}{1 + \kappa} \frac{1}{\pi \nu \sigma_0^2}} \left( 1 + \frac{\kappa}{1 + \kappa} \frac{(y - \mu_0)^2}{\nu \sigma_0^2} \right)^{-\frac{\nu + 1}{2}}
-\end{align*}
+\end{align}
 and Eq.~\eqref{eq:nll1} reduces to
-\begin{align*}
-    \mathcal{L}^{\texttt{NLL}}_i &= - \log p(\vec{y}_i | \mathfrak{m}) \\
-    &= \log \Gamma\!\left( \frac{\nu}{2} \right) - \log \Gamma\!\left( \frac{\nu + 1}{2} \right) \\
-    &\phantom{=} + \frac{1}{2} \log(\pi  / \kappa) - \frac{\nu}{2} \log(\nu \sigma_0^2 (1 + \kappa)) \\
+\begin{align}
+    \mathcal{L}^{\texttt{NLL}}_i &= - \log p(\vec{y}_i | \mathfrak{m}) \nonumber \\
+    &= \log \Gamma\!\left( \frac{\nu}{2} \right) - \log \Gamma\!\left( \frac{\nu + 1}{2} \right) \nonumber \\
+    &\phantom{=} + \frac{1}{2} \log(\pi  / \kappa) - \frac{\nu}{2} \log(\nu \sigma_0^2 (1 + \kappa)) \nonumber \\
     &\phantom{=} + \frac{\nu + 1}{2} \log( \nu \sigma_0^2 (1 + \kappa) + \kappa (y_i - \mu_0)^2)
-\end{align*}
+\end{align}
+\end{subequations}
 and thus reproduces the findings of~\cite{amini20} with $\nu = 2\alpha$, $\nu \sigma_0^2 = 2\beta$, $\kappa = v$ and $\mu_0 = \gamma$.
 Similar to the multivariate case, $p(y, \mathfrak{m})$ on its own is not sufficient to define $\mathfrak{m}$ unambiguously.
 
