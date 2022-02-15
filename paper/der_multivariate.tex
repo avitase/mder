@@ -136,7 +136,7 @@ These are the parameters of a normal-inverse-gamma function $\operatorname{\text
 The authors derive these relations by taking the normal-inverse-gamma distribution (\texttt{NIG}) as the conjugated prior of a normal distribution with unknown mean $\mu$ and standard deviation $\sigma$.
 Further, the authors show that by using Bayesian inference the loss function for these four parameters becomes a scaled Student's $t$-distribution with $2\alpha$ degrees of freedom (DoF), parametrized as:
 \begin{equation}
-    \mathcal{L}_i^\text{NLL} = \operatorname{St}_{2\alpha}\!\left( y_i \middle| \mu_0, \frac{\beta(1 + \kappa)}{\kappa \alpha} \right) .
+    \mathcal{L}_i^\text{NLL} = -\log \operatorname{St}_{2\alpha}\!\left( y_i \middle| \mu_0, \frac{\beta(1 + \kappa)}{\kappa \alpha} \right).
 \end{equation}
 For reasons we will discuss later, they combine it with a second loss function, referred to as the \textit{evidence regularizer}, using the \textit{total evidence} $\Phi$, yielding the total loss:
 \begin{equation}
