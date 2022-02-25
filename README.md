@@ -1,3 +1,5 @@
+[![arXiv](https://img.shields.io/badge/arXiv-2104.06135-b31b1b.svg)](https://arxiv.org/abs/2104.06135)
+
 # Multivariate Deep Evidential Learning
 
 This repository contains the paper draft and sources, as well as supplementary material to reproduce _Multivariate Deep Evidential Regression_:
